@@ -1,0 +1,29 @@
+{
+  "name": "redux-replaceable-middleware",
+  "version": "0.0.1",
+  "description": "Redux replaceable middleware",
+  "main": "index.js",
+  "scripts": {
+    "test": "lab"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgte/redux-replaceable-middleware.git"
+  },
+  "keywords": [
+    "redux",
+    "middleware",
+    "replace"
+  ],
+  "author": "pgte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pgte/redux-replaceable-middleware/issues"
+  },
+  "homepage": "https://github.com/pgte/redux-replaceable-middleware#readme",
+  "devDependencies": {
+    "code": "^3.0.1",
+    "lab": "^10.8.2",
+    "redux": "^3.5.2"
+  }
+}
