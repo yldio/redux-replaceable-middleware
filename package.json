@@ -1,10 +1,10 @@
 {
   "name": "redux-replaceable-middleware",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Redux replaceable middleware",
   "main": "index.js",
   "scripts": {
-    "test": "lab"
+    "test": "node --harmony node_modules/istanbul/lib/cli.js cover -- lab -vl && istanbul check-coverage"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,12 @@
   "homepage": "https://github.com/pgte/redux-replaceable-middleware#readme",
   "devDependencies": {
     "code": "^3.0.1",
+    "istanbul": "^0.4.3",
     "lab": "^10.8.2",
+    "pre-commit": "^1.1.3",
     "redux": "^3.5.2"
-  }
+  },
+  "pre-commit": [
+    "test"
+  ]
 }

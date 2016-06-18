@@ -4,7 +4,7 @@ function createMiddleware(_mw) {
   var options, next;
   var mw = _mw;
 
-  create.replace = replaceBy;
+  create.replaceBy = replaceBy;
 
   return create;
 
