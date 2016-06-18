@@ -4,11 +4,11 @@ function createMiddleware(_mw) {
   var options, next;
   var mw = _mw;
 
-  create.replace = replace;
+  create.replace = replaceBy;
 
   return create;
 
-  function replace(_mw) {
+  function replaceBy(_mw) {
     mw = _mw(options)(next);
   }
 

@@ -54,7 +54,7 @@ describe('redux-replaceable-middleware', function() {
   });
 
   it('should allow the middleware to be replaced', function(done) {
-    mw.replace(function(options) {
+    mw.replaceBy(function(options) {
       return function(next) {
         return function(action) {
           action.value = (action.value || 1) * 3;
