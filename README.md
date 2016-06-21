@@ -18,6 +18,15 @@ setTimeout(function() {
 }, 1000);
 ```
 
+## Options
+
+You can access the Redux options argument like this:
+
+```javascript
+replaceableMiddleware.options // contains redux options
+
+replaceableMiddleware.options.dispatch({action});
+```
 
 # License
 

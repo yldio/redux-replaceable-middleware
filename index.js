@@ -13,7 +13,7 @@ function createMiddleware(_mw) {
   }
 
   function create(_options) {
-    options = _options;
+    create.options = options = _options;
 
     if(mw) {
       mw = mw(options);
